@@ -18,7 +18,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         fontFamily: 'Rubik',
         scaffoldBackgroundColor: AppColors.background,
-        brightness: Brightness.dark,
+        // brightness: Brightness.dark,
       ),
       initialRoute: AppRouters.splashScreen,
       routes: AppRouters.routes,

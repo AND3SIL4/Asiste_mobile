@@ -1,7 +1,9 @@
 class AppStrings {
+  static const _name = 'ASISTE';
   // String resources
   static const hola = 'Hola';
-  static const welcomeToAsiste = 'Bienvenido a ASISTE';
+  static const welcomeToAsiste =
+      'Bienvenido a $_name, por favor ingrese sus credenciales para poder iniciar sesión';
   static const fogorgotPassword = '¿Olvido su contraseña?';
   static const singIn = 'Iniciar sesión';
   static const documentInput = 'Ingresa tu documento';

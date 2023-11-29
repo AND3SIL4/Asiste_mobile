@@ -1,3 +1,4 @@
+import 'package:asiste/styles/color.style.dart';
 import 'package:flutter/material.dart';
 
 class AppText {
@@ -10,7 +11,7 @@ class AppText {
     fontWeight: FontWeight.w600,
   );
   static const subtitle1 = TextStyle(
-    fontSize: 16,
+    fontSize: 20,
     fontWeight: FontWeight.w600,
   );
   static const subtitle2 = TextStyle(
@@ -27,6 +28,7 @@ class AppText {
   );
   static const body2 = TextStyle(
     fontSize: 14,
+    color: AppColors.font,
     fontWeight: FontWeight.w400,
   );
 }
