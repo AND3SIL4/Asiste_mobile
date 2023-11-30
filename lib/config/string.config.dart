@@ -6,8 +6,8 @@ class AppStrings {
       'Bienvenido a $_name, por favor ingrese sus credenciales para poder iniciar sesión';
   static const fogorgotPassword = '¿Olvido su contraseña?';
   static const singIn = 'Iniciar sesión';
-  static const documentInput = 'Ingresa tu documento';
-  static const passwordInput = 'Ingresa tu contraseña';
+  static const documentInput = 'Documento de identidad';
+  static const passwordInput = 'Contraseña';
   static const userInfo = 'Información de usuario';
   static const personalData = 'Datos personales';
   static const userData = 'Datos usuario';
