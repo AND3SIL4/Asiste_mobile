@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 
 class TextFieldWidget extends StatelessWidget {
   const TextFieldWidget({
@@ -8,6 +9,8 @@ class TextFieldWidget extends StatelessWidget {
     required this.prefixIcon,
     this.sufixIcon,
     required this.helperText,
+    required this.controller,
+    required this.numericOnly,
   });
 
   final String labelText;
@@ -15,6 +18,8 @@ class TextFieldWidget extends StatelessWidget {
   final Widget prefixIcon;
   final Widget? sufixIcon;
   final String helperText;
+  final TextEditingController controller;
+  final bool numericOnly;
 
   @override
   Widget build(BuildContext context) {
@@ -33,6 +38,9 @@ class TextFieldWidget extends StatelessWidget {
         filled: true,
         fillColor: Colors.white,
       ),
+      controller: controller,
+      inputFormatters:
+          numericOnly ? [FilteringTextInputFormatter.digitsOnly] : [],
     );
   }
 }
