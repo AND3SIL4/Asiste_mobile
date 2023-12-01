@@ -10,6 +10,8 @@ class Toolbar extends StatelessWidget implements PreferredSizeWidget {
   @override
   Widget build(BuildContext context) {
     return AppBar(
+      foregroundColor: Colors.white,
+      backgroundColor: const Color.fromARGB(255, 23, 118, 26),
       title: Text(
         title,
         style: AppText.subtitle1,

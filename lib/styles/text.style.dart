@@ -13,6 +13,7 @@ class AppText {
   static const subtitle1 = TextStyle(
     fontSize: 20,
     fontWeight: FontWeight.w600,
+    // color: Colors.white,
   );
   static const subtitle2 = TextStyle(
     fontSize: 16,

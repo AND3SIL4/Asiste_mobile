@@ -1,3 +1,4 @@
+import 'package:asiste/pages/asistencia.page.dart';
 import 'package:asiste/pages/home.page.dart';
 import 'package:asiste/pages/profile.page.dart';
 import 'package:asiste/styles/color.style.dart';
@@ -21,9 +22,7 @@ class _MainPageState extends State<MainPage> {
 
   static const List<Widget> _widgetOptions = <Widget>[
     HomePage(),
-    Center(
-      child: Text('Asistencia'),
-    ),
+    AsistenciaPage(),
     ProfilePage()
   ];
   @override

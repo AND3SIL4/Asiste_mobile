@@ -71,16 +71,17 @@ class _LoginPageState extends State<LoginPage> {
                   child: ElevatedButton(
                     onPressed: () {
                       // Acceder a los valores de los controladores
-                      final int document = int.parse(documentController.text);
-                      final String password = passwordController.text;
+                      // final int document = int.parse(documentController.text);
+                      // final String password = passwordController.text;
 
-                      if (document == 123 && password == '123') {
-                        Navigator.of(context)
-                            .pushReplacementNamed(AppRouters.main);
-                      } else {
-                        // ignore: avoid_print
-                        print('Wrong password');
-                      }
+                      // Navigator.pushReplacement(
+                      //   context,
+                      //   MaterialPageRoute(
+                      //     builder: (context) => const MainPage(),
+                      //   ),
+                      // );
+                      Navigator.of(context)
+                          .pushReplacementNamed(AppRouters.main);
                     },
                     style: ElevatedButton.styleFrom(
                       backgroundColor: AppColors.primary,
